@@ -1,0 +1,14 @@
+services:
+  astro:
+    build: .
+    ports:
+     - "4321:4321"
+
+    image: as-software
+    container_name: as-software
+
+    volumes:
+      - .:/app
+      - /app/node_modules
+    
+    command: pnpm start 
