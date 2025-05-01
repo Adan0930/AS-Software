@@ -2,7 +2,7 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Card from "@/components/Card.astro";
 
-import { getAbsoluteLocaleUrl } from "astro:i18n";
+// import { getAbsoluteLocaleUrl } from "astro:i18n";
 import { languageList } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
 
@@ -12,7 +12,7 @@ const translateLabels = useTranslations(
 );
 ---
 
-<BaseLayout title="Inicio - CodeXtremeOS">
+<BaseLayout title="Inicio -- AS Software">
   <!-- Hero Section -->
   <section
     class="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20 overflow-hidden -mt-4"
@@ -25,7 +25,7 @@ const translateLabels = useTranslations(
           <span
             class="bg-clip-text text-transparent bg-gradient-to-r from-[#FF6F61] to-[#6B5B95]"
           >
-            AS-software vamos con todo 
+            DESAROLLAMOS TECNOLOGIA QUE INCREMENTA TUS INGRESOS
           </span>
         </h1>
         <p
@@ -35,7 +35,10 @@ const translateLabels = useTranslations(
         </p>
         <div class="animate-fade-in delay-200">
           <a
-            href={getAbsoluteLocaleUrl(currentLang, "descargas")}
+          
+           
+
+          
             class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-[#FF6F61] to-[#6B5B95] rounded-lg hover:opacity-90 transition-opacity"
           >
             {translateLabels("download.button")}
@@ -290,7 +293,7 @@ const translateLabels = useTranslations(
         </span>
       </h2>
       <a
-        href={getAbsoluteLocaleUrl(currentLang, "descargas")}
+        
         class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-[#FF6F61] to-[#6B5B95] rounded-lg hover:opacity-90 transition-opacity"
       >
         {translateLabels("download.button")}
