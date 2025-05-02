@@ -1,16 +1,16 @@
 export const languageList = {
-  es: "Español",
+  // es: "Español",
   en: "English",
 } as const;
 
 export const labels = {
   es: {
     // =========== Navegación =========== //
-    "nav.home": "Inicio",
-    "nav.guides": "Guías",
-    "nav.tools": "Herramientas",
-    "nav.software": "Software",
-    "nav.download": "Descargas",
+    "nav.home": "Inicio" ,
+    "nav.solutions": "Soluciones",
+    "nav.demo": "Demo",
+    "nav.innovation": "Innovación",
+    "nav.contact": "Contacto",
 
     // =========== Tema =========== //
     "theme.toggle": "Cambiar Tema",
@@ -359,11 +359,11 @@ export const labels = {
   },
   en: {
     // =========== Navigation =========== //
-    "nav.home": "Home",
-    "nav.guides": "Guides",
-    "nav.tools": "Tools",
-    "nav.software": "Software",
-    "nav.download": "Downloads",
+    "nav.home": "Inicio",
+    "nav.solutions": "Soluciones",
+    "nav.demo": "Demo",
+    "nav.innovation": "Innovación",
+    "nav.contact": "Contacto",
 
     // =========== Theme =========== //
     "theme.toggle": "Toggle Theme",
