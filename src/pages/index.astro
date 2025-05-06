@@ -10,80 +10,53 @@ const currentLang = Astro.currentLocale || "en";
 const translateLabels = useTranslations(
   currentLang as keyof typeof languageList
 );
+
 ---
 
 <BaseLayout title="Inicio -- AS Software">
   <!-- Hero Section -->
   <section
-    class="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20 overflow-hidden -mt-4"
+    class="relative bg-white from-gray-900 to-gray-800 text-white py-20 overflow-hidden -mt-4"
   >
     <div class="container mx-auto text-center px-4 relative z-10">
-      <div class="max-w-3xl mx-auto">
+      <div class="max-w-96 mx-auto mt-20">
         <h1
           class="text-5xl md:text-6xl font-bold mb-6 animate-fade-in text-shadow-lg"
         >
           <span
-            class="bg-clip-text text-transparent bg-gradient-to-r from-[#FF6F61] to-[#6B5B95]"
+            class="text-secondary_green font-inter black 900"
           >
             DESAROLLAMOS TECNOLOGIA QUE INCREMENTA TUS INGRESOS
           </span>
         </h1>
-        <p
-          class="text-xl md:text-2xl mb-8 animate-fade-in delay-150 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block"
-        >
-          {translateLabels("home.description")}
-        </p>
-        <div class="animate-fade-in delay-200">
-          <a
-          
-           
-
-          
-            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-[#FF6F61] to-[#6B5B95] rounded-lg hover:opacity-90 transition-opacity"
-          >
-            {translateLabels("download.button")}
-            <svg
-              class="w-4 h-4 ml-2"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-              ></path>
-            </svg>
-          </a>
-        </div>
       </div>
     </div>
   </section>
 
   <!-- Sección de Información -->
   <main
-    class="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800 py-16 relative"
+    class="bg-white from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800 py-16 relative"
   >
   <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-12">
         <span
-          class="bg-clip-text text-transparent bg-gradient-to-r from-[#6B5B95] to-[#8B7CB0]"
+          class="text-dark font-inter bold 700 italic"
         >
-          {translateLabels("home.ques")}
+        "Más velocidad, más visibilidad, más ventas."
         </span>
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <Card
-          title={translateLabels("home.opti")}
-          description={translateLabels("home.desopti")}
-          borderColor="border-[#FF6F61]"
-          gradientFrom="from-[#FF6F61]"
-          gradientTo="to-[#FF8C78]"
-          textColor="text-[#6B5B95]"
-          hoverTextColor="hover:text-[#FF6F61]"
-          icon="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+          title= '¿Cuánto tiempo y dinero pierdes al hacer lo mismo todos los días? '
+          description='Nosotros lo automatizamos'
+          borderColor="border-[#39F2AE]"
+          gradientFrom="from-[#39F2AE]"
+          gradientTo="to-[#39F2AE]"
+          textColor="text-[#39F2AE]"
+          hoverTextColor="hover:text-[#39F2AE]"
+          icon= 
+      
         />
         <Card
           title={translateLabels("home.dev.des")}
@@ -176,7 +149,7 @@ const translateLabels = useTranslations(
         <span
           class="bg-clip-text text-transparent bg-gradient-to-r from-[#FF6F61] to-[#FF8C78]"
         >
-          {translateLabels("home.features")}
+          dsjadklljkldfkkk
         </span>
       </h2>
 
