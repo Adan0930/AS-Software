@@ -4,6 +4,7 @@ const {
   description,
   borderColor,
   icon,
+  iconColor
 } = Astro.props;
 ---
 
@@ -16,15 +17,15 @@ const {
   </div>
   <div class="relative z-10 pl-6">
     <svg
-      class={`w-12 h-12 mb-4 ${borderColor}`}
+      class= {`w-12 h-12 mb-4 ${iconColor}`}
       fill="none"
       stroke="currentColor"
       viewBox="0 0 24 24"
-      stroke-width="2"
+      stroke-width=".5"
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <path d={icon} class={borderColor.replace("border-", "text-")}></path>
+      <path d={icon}></path>
     </svg>
     <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-gray-100">
       {title}
