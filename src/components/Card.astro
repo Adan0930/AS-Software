@@ -4,12 +4,14 @@ const {
   description,
   borderColor,
   icon,
-  iconColor
+  iconColor,
+  img
 } = Astro.props;
+const base = import.meta.env.BASE_URL;
 ---
 
 <div
-  class={`group relative bg-white dark:bg-[#2A2A2A] p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 ${borderColor} overflow-hidden`}
+  class={`group relative bg-white  p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 ${borderColor} overflow-hidden`}
 >
   <div
     class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r ${hoverGradientFrom} ${hoverGradientTo}"
@@ -33,6 +35,9 @@ const {
     <p class="text-sm text-gray-600 dark:text-gray-300">
       {description}
     </p>
+  </div>
+  <div class="">
+    {img}
   </div>
 </div>
 
