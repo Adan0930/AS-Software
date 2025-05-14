@@ -1,5 +1,5 @@
 ---
-import { getRelativeLocaleUrl } from "astro:i18n";
+// import { getRelativeLocaleUrl } from "astro:i18n";
 import { languageList } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
 
@@ -31,17 +31,17 @@ const navLinks = [
     label: 'SOLUCIONES',
     hoverText: "hover:text-[#6B5B95]",
   },
-  {
-    href: `${base}/demo` ,
-    label: 'DEMO',
-    hoverText: "hover:text-[#4CAF50]",
+  // {
+  //   href: `${base}/demo` ,
+  //   label: 'DEMO',
+  //   hoverText: "hover:text-[#4CAF50]",
   
-  },
-  {
-    href: `${base}/innovacion`,
-    label: 'INNOVACIÓN',
-    hoverText: "hover:text-[#1b357e]",
-  },
+  // },
+  // {
+  //   href: `${base}/innovacion`,
+  //   label: 'INNOVACIÓN',
+  //   hoverText: "hover:text-[#1b357e]",
+  // },
   {
     href: `${base}/contacto`,
     label: 'CONTACTO',
@@ -56,7 +56,7 @@ const navLinks = [
 >
   <div class="container mx-auto flex justify-between items-center px-4 py-3">
     <a
-      href= `${base}`,
+      href= `${base}`
       class="flex items-center space-x-2 group"
     >
       <span
@@ -89,7 +89,7 @@ const navLinks = [
         aria-label="Abrir menú"
       >
         <svg
-          class="w-6 h-6 text-gray-600 dark:text-gray-300"
+          class="w-6 h-6 text-green dark:text-gray-300"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -102,7 +102,7 @@ const navLinks = [
         </svg>
       </button>
 
-      <div class="relative group">
+      <!-- <div class="relative group"> -->
 
         <!-- BUTTON LANGUAGE  -->
 
@@ -114,7 +114,7 @@ const navLinks = [
             >{currentLang}</span
           >
         </button> -->
-
+<!-- 
         <div
           class="absolute right-0 top-full mt-2 w-32 bg-white dark:bg-gray-900 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-200 dark:border-gray-700"
         >
@@ -139,7 +139,7 @@ const navLinks = [
             }
           </ul>
         </div>
-      </div>
+      </div> -->
 
         <!-- BUTTON THEME -->
       <!-- <button
@@ -164,7 +164,7 @@ const navLinks = [
 
   <div
     id="mobile-menu"
-    class="hidden md:hidden fixed top-16 left-0 w-full bg-inherit border-b border-gray-200 dark:border-gray-700 backdrop-blur-sm shadow-lg animate-slideInRight"
+    class="hidden md:hidden text-dark fixed top-16 left-0 w-full bg-inherit border-b border-gray-200 dark:border-gray-700 backdrop-blur-sm shadow-lg animate-slideInRight"
   >
     <div class="container mx-auto px-4 py-4">
       <ul class="flex flex-row flex-wrap gap-4 justify-center">
@@ -184,30 +184,7 @@ const navLinks = [
 </header>
 
 <script is:inline>
-  const themeToggle = document.getElementById("theme-toggle");
-  const themeIcon = document.getElementById("theme-icon");
-  const htmlElement = document.documentElement;
-
-  const toggleTheme = () => {
-    htmlElement.classList.toggle("dark");
-    const isDarkMode = htmlElement.classList.contains("dark");
-    themeIcon.textContent = isDarkMode ? "☀️" : "🌙";
-    themeIcon.classList.add("rotate-[360deg]");
-    setTimeout(() => themeIcon.classList.remove("rotate-[360deg]"), 500);
-    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-  };
-
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "light") {
-    htmlElement.classList.remove("dark");
-    themeIcon.textContent = "🌙";
-  } else {
-    htmlElement.classList.add("dark");
-    themeIcon.textContent = "☀️";
-  }
-
-  themeToggle.addEventListener("click", toggleTheme);
-
+ 
   const mobileMenuButton = document.getElementById("mobile-menu-button");
   const mobileMenu = document.getElementById("mobile-menu");
 

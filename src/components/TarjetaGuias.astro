@@ -2,6 +2,7 @@
 const {
   title,
   description,
+  img,
   link,
   linkText,
   borderColor,
@@ -54,11 +55,8 @@ const translateLabels = useTranslations(currentLang);
       )
     }
 
-    <div class="bg-dark rounded-xl">
-      <!-- <img src="../../public/assets//background.svg" alt=""> -->
-       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis aut magnam molestiae nam, cum sed praesentium quasi fugit aspernatur architecto voluptas molestias eum reprehenderit, tempora iusto animi est vero beatae!lorem100
-       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident cum error voluptatibus voluptates porro officia quam, delectus, blanditiis repellat, consequuntur deleniti cupiditate. Consequatur est rerum, cum, fugiat recusandae dolor quis tenetur possimus nulla quae obcaecati, exercitationem illum eligendi? Minima non ipsum nulla commodi eligendi? Obcaecati magni autem sequi quos reprehenderit!
-      
+    <div class="p-12 rounded-xl text-center">
+      <img src={img} class="rounded-2xl" width="400px">
     </div>
 
     <!-- <a
