@@ -9,6 +9,9 @@ module.exports = {
       padding: '2rem',
     },
     extend: {
+      fontFamily:{
+        inter: 'Inter'
+      },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'slide-up': 'slideUp 0.5s ease-in-out',
@@ -30,7 +33,12 @@ module.exports = {
         },
       },
       colors: {
-        primary: '#FF6F61',
+        dark: '#323941',
+        grey: '#B1B5C0',
+        white:'#ffffff',
+        green: '#39F2AE',
+        secondary_green:'#00B371',
+        // default
         secondary: '#6B5B95',
         darkbg: '#1A1A1A',
         lightbg: '#F4F4F4',

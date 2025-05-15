@@ -3,10 +3,11 @@ name: AS-Software deploy
 on:
   push:
     branches:
-      - deploy
+      - Deploy
 
 permissions:
   contents: write
+  pages: write
   id-token: write
 
 jobs: 
