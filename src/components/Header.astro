@@ -172,7 +172,7 @@ const navLinks = [
           navLinks.map((link) => (
             <li>
               <a href={link.href} class={`${linkClasses} ${link.hoverText}`}>
-                <span set:html={link.icon} />
+                <span = {link} />
                 {link.label}
               </a>
             </li>
